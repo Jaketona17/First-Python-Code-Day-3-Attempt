@@ -1,0 +1,52 @@
+question1 = ('Hello! Would you like to go to Walt Disney World?: ')
+
+question2 = ('Do you have a valid ticket for admission \
+into Walt Disney World?: ')
+
+question3 = ('Great! Let\'s go to the Magic Kingdom. \
+What ride do you want to go on first?: ')
+
+question4 = ('How tall are you? Please measure in inches: ')
+
+
+options2 = ('1. Single-Day Park Hopper',
+'2. Annual Pass', '3. None')
+
+
+# 1 ask the user if they want to go to wdw
+print(question1)
+
+if answer == 'Yes':
+    input(question2)
+    print(options2)
+elif answer == 'No':
+    print('Alright, maybe some other time then. Goodbye!')
+    exit(0)
+else: print('Please answer in \"Yes\" or \"No\"')
+
+
+# 2 ask user if they have a ticket for wdw
+if answer == '1' or answer == '2':
+    input(question4)
+elif answer == '3':
+    print('You must first purchase a ticket if you wish to go.')
+    exit(0)
+else: print('Please type 1, 2, or 3')
+
+# 3 ask what ride to go on (just SM for now)
+ride_list = ('Space Mountain')
+
+if answer == 'Space Mountain':
+    input(question4)
+else: print('Please type the full name of the attraction you would\
+like to go on first.')
+
+# 4 ask height
+height = 44
+
+if height >= 44:
+    print('Have fun!')
+    end(0)
+
+elif height < 44:
+    print('Sorry, you are not tall enough to ride this ride.')
